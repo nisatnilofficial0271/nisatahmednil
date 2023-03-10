@@ -1,0 +1,260 @@
+/* Reset default browser styles */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+/* Set the font family and size for the whole page */
+
+body {
+
+  font-family: 'Raleway', sans-serif;
+
+  font-size: 16px;
+
+}
+
+/* Set the font for the headings */
+
+h1 {
+
+  font-family: 'Rampart One', cursive;
+
+  font-size: 36px;
+
+}
+
+/* Style the navbar */
+
+.navbar {
+
+  background-color: #333;
+
+  color: #fff;
+
+  height: 80px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 0 20px;
+
+}
+
+.navbar-brand {
+
+  font-family: 'Rampart One', cursive;
+
+  font-size: 32px;
+
+  color: #fff;
+
+  text-decoration: none;
+
+}
+
+.navbar-menu {
+
+  display: flex;
+
+  list-style: none;
+
+}
+
+.navbar-menu li {
+
+  margin-right: 20px;
+
+}
+
+.navbar-menu li a {
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+}
+
+.navbar-toggle {
+
+  display: none;
+
+}
+
+/* Set the background color and padding for sections */
+
+section {
+
+  background-color: #f2f2f2;
+
+  padding: 80px;
+
+}
+
+/* Set the font for the paragraph */
+
+p {
+
+  font-family: 'Roboto Mono', monospace;
+
+  font-size: 18px;
+
+}
+
+/* Style the gallery */
+
+.gallery {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+}
+
+.gallery img {
+
+  margin: 20px;
+
+  width: 300px;
+
+  height: 300px;
+
+  object-fit: cover;
+
+}
+
+/* Style the form */
+
+form {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+form label {
+
+  font-family: 'Roboto Mono', monospace;
+
+  font-size: 18px;
+
+  margin-bottom: 10px;
+
+}
+
+form input[type="text"],
+
+form input[type="email"],
+
+form textarea {
+
+  font-family: 'Roboto Mono', monospace;
+
+  font-size: 18px;
+
+  padding: 10px;
+
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+
+  border: none;
+
+  box-shadow: 0 0 5px #ccc;
+
+  width: 100%;
+
+  max-width: 400px;
+
+}
+
+form input[type="submit"] {
+
+  background-color: #333;
+
+  color: #fff;
+
+  font-family: 'Roboto Mono', monospace;
+
+  font-size: 18px;
+
+  padding: 10px 20px;
+
+  border-radius: 5px;
+
+  border: none;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+
+}
+
+form input[type="submit"]:hover {
+
+  background-color: #555;
+
+}
+
+/* Style the footer */
+
+footer {
+
+  background-color: #333;
+
+  color: #fff;
+
+  padding: 40px 20px;
+
+}
+
+footer h4 {
+
+  font-family: 'Rampart One', cursive;
+
+  font-size: 24px;
+
+  margin-bottom: 20px;
+
+}
+
+.footer-links {
+
+  list-style: none;
+
+}
+
+.footer-links li {
+
+  margin-bottom: 10px;
+
+}
+
+.footer-links li a {
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+}
+

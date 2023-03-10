@@ -1,0 +1,385 @@
+<!doctype HTML>
+
+<html>
+
+<head>
+
+ <title>Nisat Ahmed Nil</title>
+
+ 	<style>		.slider {
+
+			position: relative;
+
+			width: 100%;
+
+			height: 500px;
+
+			overflow: hidden;
+
+		}
+
+		.slider img {
+
+			position: absolute;
+
+			top: 0;
+
+			left: 0;
+
+			width: 100%;
+
+			height: 500px;
+
+			object-fit: cover;
+
+			transition: opacity 1s ease-in-out;
+
+			opacity: 0;
+
+		}
+
+		.slider img.active {
+
+			opacity: 1;
+
+		}
+
+		.slider nav {
+
+			position: absolute;
+
+			bottom: 20px;
+
+			left: 50%;
+
+			transform: translateX(-50%);
+
+			z-index: 1;
+
+			display: flex;
+
+		}
+
+		.slider nav button {
+
+			background: #fff;
+
+			border: none;
+
+			padding: 10px;
+
+			margin: 0 10px;
+
+			cursor: pointer;
+
+		}
+
+		.slider nav button.active {
+
+			background: #000;
+
+			color: #fff;
+
+		}
+
+	</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Rampart+One&family=Roboto+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+ <meta charset="UTF-8">
+
+  <meta name="description" content="My Personal Portfolio">
+
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+
+  <meta name="author" content="Nisat Ahmed Nil">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <nav class="navbar">
+
+  <div class="container">
+
+    <a class="navbar-brand" href="#">Nisat Ahmed Nil</a>
+
+<nav>
+
+  <div class="menu-icon">
+
+    <span class="line"></span>
+
+    <span class="line"></span>
+
+    <span class="line"></span>
+
+  </div>
+
+  <ul class="menu">
+
+    <ul class="navbar-menu">
+
+    <li><a href="#">Home</a></li>
+
+    <li><a href="#">Skill</a></li>
+
+    <li><a href="#">portfolio</a></li>
+
+    <li><a href="#">Contact</a></li>
+
+  </ul>
+
+</nav>
+
+    </ul>
+
+    <div class="navbar-toggle">
+
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+    </div>
+
+  </div>
+
+</nav>
+
+</head>
+
+ <body>
+
+	<div class="slider">
+
+		<img class="active" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5618rxMAGJkMVdCMW4zfwaHY9XR-JivWpYMqbBcidrToPRWiO5Gyf4BhA1cENIUMoqVRvheCiHmZa6FED4u--iyCgZ2aAhd2cLkadTdx-1GJMLjGMIsk860xwr7Nao1QefJP_y00HMJ33ugUr8SddzQZ08RB8u527gHB43O4VpMwpG3h9RPkzqvk5gw/s812/sagorer+pic+%25284%2529.jpg" alt="Image 1">
+
+		<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6ynQFju4XIgl3IyUAmrezcyWCfTNxHjS0s2Z441n7wT-wUeBxr2GIc4A-XnWxr7bGM33VvgKpyYgIC9dzStdp7eexjgaiTuY715w1EtvnEikksMEIYVXj9f-woEn1wHSK0ujENSCFIgGTQQ_b7MrV50osun5kN3of2rIldw8ry-3Dujmyd_12FU0-EQ/s1080/sagorer+pic+%252817%2529.jpg" alt="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6ynQFju4XIgl3IyUAmrezcyWCfTNxHjS0s2Z441n7wT-wUeBxr2GIc4A-XnWxr7bGM33VvgKpyYgIC9dzStdp7eexjgaiTuY715w1EtvnEikksMEIYVXj9f-woEn1wHSK0ujENSCFIgGTQQ_b7MrV50osun5kN3of2rIldw8ry-3Dujmyd_12FU0-EQ/s1080/sagorer+pic+%252817%2529.jpg">
+
+		<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhq1AlM25RJU-keLyOZN15OuKA31O1ct7wf091OF94AXTOayDVXquVuPVfvF2iwVVlE5SWvdHT1BaT5lC36obUf8jKZvx_NBnAeHI7fa_y9iwdebdaz038hwC7FgX_9STHjRRbatgPU5O4SEZQCwEY3pJ1lCFhNDTWtPi7DNgs62i_57LoPNCmUwsoDqA/s1080/sagorer+pic+%252820%2529.jpg" alt="Image 3">
+
+		<nav>
+
+			<button class="active" onclick="changeImage(0)">1</button>
+
+			<button onclick="changeImage(1)">2</button>
+
+			<button onclick="changeImage(2)">3</button>
+
+		</nav>
+
+	</div>
+
+	<script>
+
+		let images = document.querySelectorAll('.slider img');
+
+		let buttons = document.querySelectorAll('.slider button');
+
+		function changeImage(index) {
+
+			images.forEach((image) => {
+
+				image.classList.remove('active');
+
+			});
+
+			buttons.forEach((button) => {
+
+				button.classList.remove('active');
+
+			});
+
+			images[index].classList.add('active');
+
+			buttons[index].classList.add('active');
+
+		}
+
+		setInterval(() => {
+
+			let activeImageIndex = Array.from(images).findIndex((image) => image.classList.contains('active'));
+
+			let nextImageIndex = (activeImageIndex + 1) % images.length;
+
+			changeImage(nextImageIndex);
+
+		}, 5000);
+
+	</script>
+
+<section id="about">
+
+      <h1>About Me</h1>
+
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG_ragMakMU2iYnAp9e7FsVAY218CI7GE9OxkANt5Tb9OyX2GuG_wOvi6LEhGGWHYpMSr7ZzLJ2dtXicefsOskfYUyfslCac0kPSDxgGjRsVDr0e-0pVWCmxfDPMn3esptMozUgXXYawHLKVDX3_7FPRP5oqrMLkfVD_-GLEKlQCjGka6PsU5aST5_SQ/s240/FB_IMG_1675741278783.jpg">
+
+      <h1>I Am Sabbir Hossen</h1>
+
+      <p>I am a self-taught web developer with over 5 years of experience in the field. I specialize in HTML, CSS, and JavaScript, and have worked on a variety of projects ranging from simple websites to complex web applications.</p>
+
+    </section>
+
+    
+
+    <section id="portfolio">
+
+      <h1>Meet My Admin Team</h1>
+
+      <div class="gallery">
+
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG_ragMakMU2iYnAp9e7FsVAY218CI7GE9OxkANt5Tb9OyX2GuG_wOvi6LEhGGWHYpMSr7ZzLJ2dtXicefsOskfYUyfslCac0kPSDxgGjRsVDr0e-0pVWCmxfDPMn3esptMozUgXXYawHLKVDX3_7FPRP5oqrMLkfVD_-GLEKlQCjGka6PsU5aST5_SQ/s240/FB_IMG_1675741278783.jpg" alt="Site Devoloper">
+
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5IrE_NG3XiBxVef-NvJ644UQWdU6UJfLflQcggj2zACiYhG9kAs7Op_RjBovmc036huHfbuIX2GFBNoX8xBhA55fgbhnf1iiILhReuNWFLpEF5VZ6GzUNwphLlJYhvADVogI8-HxjsWlmWeHit9jUx_DM-hf7nH3h35USc2zdYSMKbh_QTUi6ubN1Jg/s1080/received_152440747698590.jpeg" alt="Admin 2">
+
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm5kVcegpsdihdtNmJ-vzQ2V7hTvKfhe8G_yGVU4_vNu7LQWKaBNx4w11Slc-USYdNR_Kz8sDM-gNP4JMlRT2yj-f9fFeoZgrexaUNNYr3RV2V91qfsa5M8FaZERE3scop7rEzh2z7ejJUzpP-RRXkJsOSZ4_GQNQzSU09ziCMZPzqk-L_fFVb10kkog/s600/received_247530474275582.jpeg" alt="Admin 3">
+
+      </div>
+
+    </section>
+
+	<h1>Contact Us</h1>
+
+	<p>Please fill out the form below to get in touch with us.</p>
+
+	<form onsubmit="sendEmail(); reset(); return false;">
+
+		<label for="name">Name:</label>
+
+		<input type="text" id="name" name="name" required><br>
+
+		<label for="email">Email:</label>
+
+		<input type="email" id="email" name="email" required><br>
+
+		<label for="message">Message:</label>
+
+		<textarea id="message" name="message" required></textarea><br>
+
+		<input type="submit" value="Send">
+
+	</form>
+
+	<script src"https://smtpjs.com/v3/smtp.js">
+
+</script>
+
+<script>
+
+function sendEmail(){
+
+Email.send({
+
+  secureToken="c77ee795-457e-4ffb-bab0-91e2e56146bd",
+
+To:"mdsabbirrahmen0271@gmail.com",
+
+From : document.getElementById("email").value,
+
+Subject:"New Contact Form Enquiry",
+
+Body: "Name : " + document.getElementById("name").value
+
++ "<br> Email: + document.getElementById("email").value
+
++ "<br> Pnone no: + document.getElementById("phone").value
+
++ "<br> Message: + document.getElementById("message").value
+
+}).then(
+
+message=> alert("Message Sent Successfully")
+
+);
+
+}
+
+</script>
+
+ </body>
+
+ <footer>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-3 col-sm-6">
+
+        <h4>About Us</h4>
+
+        <p>I am Nishat Ahmed Neil I am a Bangladeshi Musician and Singer.And I am a Full Struck Web Developer and I am an Ethical Hacker and a Website Vulnerability Finder.I am Nishat Ahmed Neil I am a Bangladeshi Musician and Singer.And I am a Full Struck Web Developer and I am an Ethical Hacker and a Website Vulnerability Scanner.</p>
+
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+
+        <h4>Explore</h4>
+
+        <ul class="footer-links">
+
+          <li><a href="#">Home</a></li>
+
+          <li><a href="#">Skill</a></li>
+
+          <li><a href="#">Portfolio</a></li>
+
+          <li><a href="#">Contact</a></li>
+
+        </ul>
+
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+
+        <h4>Follow Us</h4>
+
+        <ul class="social-icons">
+
+          <li><a href="https://www.facebook.com/HedaMinal.HedaCho.Team.Ar.Bap?mibextid=ZbWKwL"></li>
+
+          <li><i class="fab fa-facebook-f"></i></li>
+
+          </a></li>
+
+          <li><a href="https://twitter.com/SabbirH82886445?t=3s1R43PxS6P5M-VF6Wq5Hw&s=07"><i class="fab fa-twitter"></i></a></li>
+
+          <li><a href="www.instagram.com/nilnisatahmed"><i class="fab fa-instagram"></i></a></li>
+
+        </ul>
+
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+
+        <h4>Contact Us</h4>
+
+        <ul class="contact-info">
+
+          <li><i class="fas fa-map-marker-alt"></i> 123 ABC Street, Dhaka, Bangladesh</li>
+
+          <li><i class="fas fa-envelope"></i> info@abcnewsbd.com</li>
+
+          <li><i class="fas fa-phone"></i> +880 1610 906758</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <hr/>
+
+  © Copyright 2015-2023 -     <a class="navbar-brand" href="index.html">Nisat Ahmed Nil</a> - All Rights Reserved |♥️Devoloped By Nisat Ahmed Nil
+
+</footer>
+
+</html>

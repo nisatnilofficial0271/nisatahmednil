@@ -30,67 +30,8 @@ h1 {
 
 }
 
-/* Style the navbar */
 
-.navbar {
-
-  background-color: #333;
-
-  color: #fff;
-
-  height: 80px;
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  padding: 0 20px;
-
-}
-
-.navbar-brand {
-
-  font-family: 'Rampart One', cursive;
-
-  font-size: 32px;
-
-  color: #fff;
-
-  text-decoration: none;
-
-}
-
-.navbar-menu {
-
-  display: flex;
-
-  list-style: none;
-
-}
-
-.navbar-menu li {
-
-  margin-right: 20px;
-
-}
-
-.navbar-menu li a {
-
-  color: #fff;
-
-  text-decoration: none;
-
-  font-size: 18px;
-
-}
-
-.navbar-toggle {
-
-  display: none;
-
-}
+  
 
 /* Set the background color and padding for sections */
 

@@ -22,16 +22,6 @@ font-family: 'Rampart One', cursive;
 
 font-family: 'Roboto Mono', monospace;
 }
-
-/* Set the font for the headings */
-
-h1 {
-
-  font-family: 'Rampart One', cursive;
-
-  font-size: 36px;
-
-}
 nav {
   display: flex;
   justify-content: space-between;

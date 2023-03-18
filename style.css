@@ -57,24 +57,6 @@ nav {
   width: 50%;
 }
 
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 1rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.nav-links a:hover {
-  background-color: #fff;
-  color: #333;
-}
-
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
